@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Etiquetas HTML Comunes y Avanzadas</title>
+    <style>
+      pre {
+        background-color: #f4f4f4;
+        padding: 10px;
+        border-radius: 5px;
+      }
+    </style>
+  </head>
+  <body>
+    <header>
+      <h1>Etiquetas HTML Comunes y Avanzadas</h1>
+      <p>
+        Esta página muestra diversas etiquetas HTML, explicando su función y
+        cómo se escriben.
+      </p>
+    </header>
+
+    <nav>
+      <h2>Navegación (nav)</h2>
+      <p>La etiqueta nav se usa para definir una sección de navegación.</p>
+      <pre><code>&lt;nav&gt;
+    &lt;!-- Contenido de navegación --&gt;
+&lt;/nav&gt;</code></pre>
+      <ul>
+        <li><a href="#texto">Texto</a></li>
+        <li><a href="#multimedia">Multimedia</a></li>
+        <li><a href="#formularios">Formularios</a></li>
+        <li><a href="#semantica">Semántica</a></li>
+      </ul>
+    </nav>
+
+    <main>
+      <section id="texto">
+        <h2>Etiquetas de Texto</h2>
+
+        <h3>Encabezados (h1 a h6)</h3>
+        <p>
+          Los encabezados se usan para definir la estructura y jerarquía del
+          contenido.
+        </p>
+        <pre><code>&lt;h1&gt;Encabezado 1&lt;/h1&gt;
+&lt;h2&gt;Encabezado 2&lt;/h2&gt;
+&lt;h3&gt;Encabezado 3&lt;/h3&gt;</code></pre>
+        <h1>Esto es un h1</h1>
+        <h2>Esto es un h2</h2>
+        <h3>Esto es un h3</h3>
+
+        <h3>Párrafos (p)</h3>
+        <p>La etiqueta p se usa para definir párrafos de texto.</p>
+        <pre><code>&lt;p&gt;Este es un párrafo de ejemplo.&lt;/p&gt;</code></pre>
+        <p>Este es un párrafo de ejemplo.</p>
+
+        <h3>Texto enfatizado (em) y fuerte (strong)</h3>
+        <pre><code>&lt;em&gt;Texto enfatizado&lt;/em&gt;
+&lt;strong&gt;Texto fuerte&lt;/strong&gt;</code></pre>
+        <p>
+          Esto es <em>texto enfatizado</em> y esto es
+          <strong>texto fuerte</strong>.
+        </p>
+      </section>
+
+      <section id="multimedia">
+        <h2>Etiquetas Multimedia</h2>
+
+        <h3>Imágenes (img)</h3>
+        <p>La etiqueta img se usa para insertar imágenes.</p>
+        <pre><code>&lt;img src="ruta/a/la/imagen.jpg" alt="Texto alternativo"&gt;</code></pre>
+        <img
+          src="https://via.placeholder.com/300x200"
+          alt="Imagen de ejemplo"
+        />
+
+        <h3>Video (video)</h3>
+        <p>La etiqueta video se usa para insertar videos.</p>
+        <pre><code>&lt;video controls&gt;
+    &lt;source src="ruta/al/video.mp4" type="video/mp4"&gt;
+    Tu navegador no soporta el elemento de video.
+&lt;/video&gt;</code></pre>
+        <video controls width="300">
+          <source
+            src="https://interactive-examples.mdn.mozilla.net/media/cc0-videos/flower.webm"
+            type="video/webm"
+          />
+          Tu navegador no soporta el elemento de video.
+        </video>
+
+        <h3>Audio (audio)</h3>
+        <p>La etiqueta audio se usa para insertar archivos de audio.</p>
+        <pre><code>&lt;audio controls&gt;
+    &lt;source src="ruta/al/audio.mp3" type="audio/mpeg"&gt;
+    Tu navegador no soporta el elemento de audio.
+&lt;/audio&gt;</code></pre>
+        <audio controls>
+          <source
+            src="https://interactive-examples.mdn.mozilla.net/media/cc0-audio/t-rex-roar.mp3"
+            type="audio/mpeg"
+          />
+          Tu navegador no soporta el elemento de audio.
+        </audio>
+      </section>
+
+      <section id="formularios">
+        <h2>Etiquetas de Formulario</h2>
+
+        <h3>Formulario (form)</h3>
+        <p>La etiqueta form se usa para crear formularios.</p>
+        <pre><code>&lt;form&gt;
+    &lt;!-- Elementos del formulario --&gt;
+&lt;/form&gt;</code></pre>
+        <form>
+          <label for="nombre">Nombre:</label>
+          <input type="text" id="nombre" name="nombre" /><br /><br />
+          <label for="email">Email:</label>
+          <input type="email" id="email" name="email" /><br /><br />
+          <input type="submit" value="Enviar" />
+        </form>
+      </section>
+
+      <section id="semantica">
+        <h2>Etiquetas Semánticas</h2>
+
+        <h3>Artículo (article)</h3>
+        <p>
+          La etiqueta article se usa para contenido independiente y autónomo.
+        </p>
+        <pre><code>&lt;article&gt;
+    &lt;h3&gt;Título del artículo&lt;/h3&gt;
+    &lt;p&gt;Contenido del artículo...&lt;/p&gt;
+&lt;/article&gt;</code></pre>
+        <article>
+          <h3>Título del artículo</h3>
+          <p>Este es un ejemplo de contenido de artículo.</p>
+        </article>
+
+        <h3>Aside (aside)</h3>
+        <p>
+          La etiqueta aside se usa para contenido relacionado pero separado del
+          contenido principal.
+        </p>
+        <pre><code>&lt;aside&gt;
+    &lt;h4&gt;Contenido relacionado&lt;/h4&gt;
+    &lt;p&gt;Información adicional...&lt;/p&gt;
+&lt;/aside&gt;</code></pre>
+        <aside>
+          <h4>Contenido relacionado</h4>
+          <p>
+            Esta es información adicional relacionada con el tema principal.
+          </p>
+        </aside>
+      </section>
+    </main>
+
+    <footer>
+      <h2>Pie de página (footer)</h2>
+      <p>
+        La etiqueta footer se usa para definir un pie de página para un
+        documento o sección.
+      </p>
+      <pre><code>&lt;footer&gt;
+    &lt;p&gt;&amp;copy; 2023 Ejemplo de Página HTML&lt;/p&gt;
+&lt;/footer&gt;</code></pre>
+      <p>&copy; 2023 Ejemplo de Página HTML</p>
+    </footer>
+  </body>
+</html>
